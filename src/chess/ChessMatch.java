@@ -21,6 +21,7 @@ public class ChessMatch
 	private Board board;
 	private boolean check;
 	private boolean checkMate;
+	private ChessPiece promoted;
 	
 	private List<Piece> piecesOnTheBoard = new ArrayList<>();
 	private List<Piece> capturedPieces = new ArrayList<>();
@@ -53,6 +54,10 @@ public class ChessMatch
 		return checkMate;
 	}
 	
+	public ChessPiece getPrometed()
+	{
+		return promoted;
+	}
 	
 	public ChessPiece[][] getPieces()
 	{
